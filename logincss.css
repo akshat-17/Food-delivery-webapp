@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    background-color: yellow;
+    
+}
+
+
+
+
+
+
+
+h1{
+	color: #CBDB2A;
+}
+.aa{
+	color: white;
+	border-radius: 10px;
+}

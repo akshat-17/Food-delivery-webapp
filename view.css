@@ -1,0 +1,22 @@
+table, th,td{
+    border: 2px ridge #CBDB2A;
+    font-family: verdana;
+   color: white;
+}
+
+table{ 
+
+  
+     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    
+}
+#co0,#co1,#co2{
+    background-color: #CBDB2A;
+}
+
+#co5,#co3,#co4{
+    background-color: #f80707;
+}

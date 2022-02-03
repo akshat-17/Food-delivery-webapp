@@ -1,0 +1,451 @@
+body{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(resources/img/hero10.jpg);
+        height: 1500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    font-family: verdana;
+    
+    }
+/*view menu button*/
+.yy{
+    border: 2px solid #CBDB2A;
+    margin-top: 20px; 
+    font-family:verdana;
+    border-radius: 20px;
+    background-color: transparent;
+    padding:15px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+ .yy a:link,
+ .yy a:visited{ 
+    padding: 8px 0;
+    color: white ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+
+    transition: border-bottom 0.2s;
+    
+
+}
+
+.yy:hover
+/*.main-nav li a:active*/{
+    border-bottom:2px solid green;
+    background-color: #CBDB2A;
+    border-radius: 20px;
+    padding: 15px;
+}p{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+}
+
+
+
+
+/*submit button*/
+.zz{
+    border: 2px solid #CBDB2A;
+    margin-top: 20px; 
+    font-family:verdana;
+    border-radius: 20px;
+    background-color: transparent;
+    padding:10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+
+ .zz a:link,
+ .zz a:visited{ 
+    padding: 8px 0;
+    color: white ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+
+    transition: border-bottom 0.2s;
+    
+
+}
+
+.zz:hover
+/*.main-nav li a:active*/{
+    border-bottom:2px solid green;
+    background-color: #CBDB2A;
+    border-radius: 20px;
+    padding: 10px;
+}p{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+}
+
+
+
+.lala{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 25px;
+}
+
+/* HIDE RADIO */
+
+/*type=radio]:hover {
+  background-color: #CBDB2A;*/
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+border-color: white;
+padding: 2px;  
+}
+
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: grab;
+ border-color: white;
+outline: 5px solid white ;
+margin: 10px;
+
+}
+
+
+ CHECKED STYLES
+[type=radio]:checked + img {
+  outline: 2px solid white ;
+}
+
+/*VIEW MENU*/
+.modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 80%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+
+
+    }
+
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 30%;
+        height: 10%;
+    }
+
+    .hand{font-family: "Montserrat", sans-serif;
+    color:fff;
+    margin-bottom: 20px;
+   }
+
+
+    .cont {
+        padding: 5px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(resources/img/hero13.jpg);
+
+    }
+input[type=text],
+    input[type=password] {
+        font-size: 15px;
+        width: 49%;
+        padding: 10px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .hand{font-family: "Montserrat", sans-serif;
+    color:fff;
+    }
+
+
+
+
+
+/* sticky navi order now*/
+
+.main-nav{
+    letter-spacing: 1px;
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 20px;
+    color: white;
+}
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+    color: white;
+
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: white ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+
+    transition: border-bottom 0.2s ;
+
+    border: 1px solid transparent;
+    margin-right: 15px;
+    -webkit-transition: border-bottom 0.2s
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+
+.main-nav li:hover
+/*.main-nav li a:active*/{
+    border-bottom:2px solid green;
+    background-color: #CBDB2A;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+
+/*-------------------------------------------------*/
+/* sticky nav*/
+/*-------------------------------------------------*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color: grey;
+    
+}
+
+
+
+    /*set a style for the buttons*/
+    button {
+        background-color: #de4949;
+        color: white;
+        padding: 5px 18px;
+        margin: 18px 0;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+    }
+
+    /* set a hover effect for the button*/
+    button:hover {
+        opacity: 0.5;
+    }
+
+    /*set extra style for the cancel button*/
+    .cancelbtn {
+        width: auto;
+        padding: 5px 18px;
+        background-color: #d41c1;
+        float: right;
+    }
+
+
+
+    /*set padding to the container*/
+    .cont {
+        padding: 5px;
+    }
+
+    /*set the forgot password text*/
+    span.psw {
+        float:right;
+        padding-top: 10px;
+    }
+
+    /*set the Modal background*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1000px;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+
+
+    }
+
+    /*style the model content box*/
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888 ;
+        width: 40%;
+        height: 120%;
+    }
+
+    /*style the close button*/
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+        float: right;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: orange;
+        cursor: pointer;
+    }
+
+    /* add zoom animation*/
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+    .wrap {height:100%; overflow:hidden;}
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+           margin-right: 50px;
+            width: 100%;
+        }
+    }
+
+/* grid row & column grouping*/
+
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#mumbai{
+    color: white;
+}
+
+/* sections */
+.section-features{
+    margin-top: 0px;
+}
+section {
+    padding: 80px 0;
+}
+
+/*Buttons*/
+
+    .input-hidden {
+    position: absolute;
+    left: -9999px;
+
+
+  }
+
+  input[type=radio]:checked + label>img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px 5px #090;
+
+  }
+
+  /* Stuff after this is only to make things more pretty */
+  input[type=radio] + label>img {
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    transition: 500ms all;
+  }
+
+  .menu{
+    padding:20px;
+  }
+
+.input-hidden{
+  padding:400px;
+}
+
+#result{
+    color:#CBDB2A;
+    background-color: white;
+    font-family: verdana;
+    font-size: 20px;
+    width: 50%;
+}
+
+#amount{
+    margin-bottom: 50px;
+    color:#CBDB2A;
+}
+
+.a1{
+    font-size: 30px;
+    
+    padding-top: 0px;
+
+}
